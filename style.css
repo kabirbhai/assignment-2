@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap');
+
+/* **************************  CSS RESET  ************************************** */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ***************************Navber start *************************************** */
+.nav-container{
+    display: flex;
+    color: rgb(233, 207, 207);
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+    background-color: rgb(53, 34, 38);
+    height:100px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.fa-shopping-cart.nav-icon{
+    cursor: pointer;
+     color: rgb(231, 155, 41);
+    margin-left: 15px;
+}
+.fa-search.nav-icon{
+     cursor: pointer;
+     margin-left: 6px;
+     color: rgb(238, 163, 51);
+}
+.nav-list ul{
+    display: flex;
+    margin: 5px 20px;
+}
+.nav-list ul li{
+    list-style: none;  
+}
+.nav-list ul li a{
+    text-decoration: none;
+    color: rgb(233, 207, 207);  
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2px 5px;
+    margin: 0 5px;
+    font-size: 1rem;
+}
+.nav-list ul li a:hover{
+    color: rgb(235, 178, 72);
+}
+
+/* ********************************
+  Navigation Style End 
+******************************* */
+
+.top-para{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(247, 238, 238, 0.89);
+    color: rgb(48, 21, 21);
+    height: 80vh;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.top-left{
+    padding-top: 100px;
+    
+}
+.top-left h1{
+    font-size: 3rem;
+}
+.btn{
+    text-decoration: none;
+    color: rgb(248, 210, 210);
+    font-size: 18px;
+    font-family: cursive;
+    background-color: rgb(70, 34, 28);
+    border-radius: 10px;
+    padding: 0 12px;
+}
+.fa-long-arrow-alt-right{
+    font-size: 7px;
+}
+.btn:hover{
+    color: rgb(235, 178, 72);
+}
+
+/* ****************************************Top-para End ************************** */
+section h2{
+    margin:17px 0;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+    
+}
+.mid-para{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 22px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+}
+.mid-item{
+    background-color: rgba(240, 247, 246, 0.938);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 5px 6px 6px rgb(238, 220, 220);
+    
+}
+.mid-item p{
+    margin-left: 7px;
+}
+
+.btn-2{
+    margin-top: 10px;
+    margin-bottom: 222px;  
+    margin-left: 84%;
+    font-size: 19px;
+}
+.btn-2 a{
+    text-decoration: none;
+   color: rgb(75, 43, 43);
+}
+.btn-2 a:hover{
+    color: rgb(245, 142, 69);
+}
+
+.rating{
+    display: flex;
+}
+
+.fa-star{
+    margin-top: 4px;
+    color: rgb(236, 182, 2);
+    font-size: 10px;
+}
+
+/* *************************************** Mid-para End *************************** */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 10, 56);
+    height: 190px;
+    color: rgb(245, 193, 97);
+}
+.copy-right{
+    margin-top: 5px;
+}
+.icon{
+    margin: 0px 10px;
+    margin-top: 22px;
+    color: white;
+}
+.icon:hover{
+    color: rgb(231, 172, 62);
+}
