@@ -9,7 +9,6 @@
 .nav-container{
     display: flex;
     color: rgb(233, 207, 207);
-    /* border: 1px solid red; */
     justify-content: space-between;
     padding: 5px 10px;
     align-items: center;
@@ -19,13 +18,13 @@
 }
 .fa-shopping-cart.nav-icon{
     cursor: pointer;
-     color: rgb(231, 155, 41);
+     /* color: rgb(231, 155, 41); */
     margin-left: 15px;
 }
 .fa-search.nav-icon{
      cursor: pointer;
      margin-left: 6px;
-     color: rgb(238, 163, 51);
+     /* color: rgb(238, 163, 51); */
 }
 .nav-list ul{
     display: flex;
@@ -37,7 +36,6 @@
 .nav-list ul li a{
     text-decoration: none;
     color: rgb(233, 207, 207);  
-    border: 1px solid gray;
     border-radius: 10px;
     padding: 2px 5px;
     margin: 0 5px;
@@ -55,7 +53,7 @@
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(247, 238, 238, 0.89);
+    /* background-color: rgba(247, 238, 238, 0.89); */
     color: rgb(48, 21, 21);
     height: 80vh;
     font-family: 'Baloo Bhaijaan 2', cursive;
@@ -155,3 +153,96 @@ footer{
 .icon:hover{
     color: rgb(231, 172, 62);
 }
+
+/***********************
+     Media quires 
+ ***********************    */
+
+   /* for mobile device  */
+ @media only screen  and (max-width: 688px) {
+     .nav-container{
+         width: 100vw;
+         height: 240px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;    
+        }
+     .nav-list ul{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         border: none;
+     }
+
+     .top-para{
+         display: flex;
+         flex-direction: column-reverse;
+         width: 100%;
+         align-items: center;
+         justify-content: center;
+     }
+     .top-para img{
+         /* width: 70%;
+         margin: auto; */
+         display: none;
+     }
+
+     .mid-para{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         margin: auto;
+         width: 100%;
+     }
+     }
+     .btn-2{
+         width: 100px;
+         margin: auto;
+         padding: 20px 0;
+     }
+     footer{
+         width: 100%;
+     }   
+ }
+
+
+ /*__________________ 
+ For tablate divece  
+ ___________________________*/
+ @media only screen and (min-width: 687px) and (max-width: 992px) {
+     .nav-container{
+         display:flex;
+         justify-content: space-evenly;
+         align-items: center;
+         width:100%;
+     }
+     .top-para{
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+     }
+     .mid-para{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         /* display: none; */
+     }
+ }
+  
+ /* -------------------for large device 
+ -----------------------*/
+
+ @media only screen and (min-width: 992px) and (max-width: 1312px) {
+     .nav-container{
+         width: 100%;
+
+     }
+     .top-para{
+         width: 100%;
+     }
+     .mid-para{
+         width: 100%;
+     }
+     footer{
+         width:100%
+     }
+ }
